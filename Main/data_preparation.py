@@ -5,18 +5,10 @@ import os
 import shutil
 
 filename = 'D:/Kaggle/Invasive Species/train_labels.csv'
-#aisles = pd.read_csv(filename, engine='c')
-#print('Total aisles: {}'.format(aisles.shape[0]))
-#aisles.head()
 src_path = 'D:/Kaggle/Invasive Species/train/'
 directory_inv = 'D:/Kaggle/Invasive Species/Data/Invasive'
 directory_non = 'D:/Kaggle/Invasive Species/Data/Non Invasive'
-#
-#if not os.path.exists(directory_inv):
-#    os.makedirs(directory_inv)
-#    
-#if not os.path.exists(directory_non):
-#    os.makedirs(directory_non)
+ os.makedirs(directory_non)
 
 fd = pd.read_csv(filename)
 
